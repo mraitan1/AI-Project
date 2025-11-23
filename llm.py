@@ -12,4 +12,5 @@ def ask_llm(prompt, model="gpt-4.1-mini"):
         model=model,
         messages=[{"role": "user", "content": prompt}]
     )
+
     return response.choices[0].message.content
