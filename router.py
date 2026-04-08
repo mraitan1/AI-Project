@@ -17,4 +17,4 @@ def route(user_input):
     elif"feedback" in text:
         return modules.give_feedback(user_input)
     else:
-        return ask_llm(user_input)
+        return modules.generic(user_input)
