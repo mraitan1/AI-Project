@@ -72,5 +72,7 @@ def generic(user_request):
     prompt = f"""
     You are an AI Python tutor.
     Answer what is asked, if not possible then inform the user that you cannot answer that question.
+
+    The user asked: "{user_request}"
     """
     return ask_llm(prompt)
