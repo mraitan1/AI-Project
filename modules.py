@@ -67,3 +67,10 @@ def give_feedback(user_request):
     - Encouragement and potential steps
     """
     return ask_llm(prompt)
+
+def generic(user_request):
+    prompt = f"""
+    You are an AI Python tutor.
+    Answer what is asked, if not possible then inform the user that you cannot answer that question.
+    """
+    return ask_llm(prompt)
