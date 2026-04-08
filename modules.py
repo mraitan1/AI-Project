@@ -15,6 +15,7 @@ def explain_concept(user_request):
 
 def generate_example(user_request):
     prompt = f"""
+    You are an AI Python tutor.
     Generate a Python example for: "{user_request}"
 
     Include:
@@ -25,6 +26,7 @@ def generate_example(user_request):
 
 def debug_code(user_request):
     prompt = f"""
+    You are an AI Python tutor.
     The user has a bug in their code.
 
     Request:
@@ -40,6 +42,7 @@ def debug_code(user_request):
 
 def create_exercise(user_request):
     prompt = f"""
+    You are an AI Python tutor.
     Create a short Python exercise based on: "{user_request}"
 
     Include:
@@ -52,6 +55,7 @@ def create_exercise(user_request):
 
 def give_feedback(user_request):
     prompt = f"""
+    You are an AI Python tutor.
     Give constructive feedback.
 
     User answer or code:
